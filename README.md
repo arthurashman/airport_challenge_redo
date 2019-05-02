@@ -69,6 +69,24 @@ I want to instruct a plane to land at an airport
 ```
 This suggest that I need plane and airport objects to start. The airport object will have a method which instructs the plane to land. This will fulfill this user story.
 
+I added further functionality as part of this user story to track which planes are at the airport using the stands attribute.
+### User Story 2.1 (broken down from 2)
+```
+As an air traffic controller
+So I can get passengers on the way to their destination
+I want to instruct a plane to take off from an airport
+```
+This requires an additional method on airport to instruct take off
+
+### User Story 2.2 (broken down from 2)
+```
+As an air traffic controller
+So I can get passengers on the way to their destination
+I want to confirm that a taken off plane is no longer in the airport
+```
+This will utilize the stands attribute created as part of user story 1 and requires an additional method on airport to check stands.
+
+
 
 ## Learning Outcomes
 

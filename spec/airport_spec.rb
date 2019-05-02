@@ -12,4 +12,10 @@ describe Airport do
       expect(airport.instruct_landing(plane_double)).to eq [plane_double]
     end
   end
+
+  describe '#clear_takeoff' do
+    it 'can clear a plane for takeoff' do
+      expect(airport).to respond_to(:clear_takeoff).with(1).argument
+    end
+  end
 end
