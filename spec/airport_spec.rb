@@ -23,5 +23,5 @@ describe Airport do
       expect { airport.clear_takeoff(plane_double) }.to change { airport.stands.length }.from(1).to(0)
     end
   end
-
 end
+

@@ -1,9 +1,11 @@
+require 'weather'
 class Airport
 
   attr_reader :stands
 
-  def initialize
+  def initialize(weather = Weather.new)
     @stands = []
+    @weather = weather
   end
 
   def instruct_landing(plane)
