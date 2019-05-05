@@ -17,5 +17,11 @@ describe Airport do
     it 'can clear a plane for takeoff' do
       expect(airport).to respond_to(:clear_takeoff).with(1).argument
     end
+  
+    it 'logs the departure of a plane from stands' do
+      airport.instruct_landing(plane_double)
+      expect { airport.clear_takeoff(plane_double) }.to change { airport.stands.length }.from(1).to(0)
+    end
   end
+
 end

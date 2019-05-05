@@ -1,4 +1,7 @@
 class Airport
+
+  attr_reader :stands
+
   def initialize
     @stands = []
   end
@@ -8,5 +11,6 @@ class Airport
   end
 
   def clear_takeoff(plane)
+    @stands.delete(plane)
   end
 end
