@@ -84,16 +84,23 @@ As an air traffic controller
 So I can get passengers on the way to their destination
 I want to confirm that a taken off plane is no longer in the airport
 ```
-This will utilize the stands attribute created as part of user story 1 and requires additional functionality in clear_takeoff method on airport to remove specified plane from stands.
+This will utilize the stands attribute created as part of user story 1 and requires an additional method on airport to check stands.
 
-### User Story 3
+### User Story 3 & 4
 ```
 As an air traffic controller
 To ensure safety
 I want to prevent takeoff when weather is stormy
 ```
-Following SRP, weather will be its own class. A method on airport will call a method in weather to ascertain current weather conditions.
-If the conditional returns true, planes can takeoff
+```
+As an air traffic controller
+To ensure safety
+I want to prevent landing when weather is stormy
+```
+Following SRP, this will require a weather class. Weather will be generated randomly.
+Airport will have weather injected in on instantiation to allow for mocking. Airport method runway_safe? will check weather and be called before takeoff and landing to check conditions and allow or restrict runway use accordingly. 
+
+
 
 ## Learning Outcomes
 

@@ -26,8 +26,6 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-    rspec_boolean (0.0.6)
-      rspec (~> 3.3)
     rubocop (0.68.1)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
@@ -55,7 +53,6 @@ PLATFORMS
 DEPENDENCIES
   rake
   rspec
-  rspec_boolean
   rubocop-performance
   simplecov
   simplecov-console
